@@ -22,17 +22,17 @@ frontend (user interface) - React
 2. Create component files
 - basic functional component
 ```js
-import React from "react"
+  import React from "react"
 
-const App = () => {
-  return(
-    <> 
-      <h1> Have a Meow-tastic Day!</h1>
-    </>
-  )
-}
+  const App = () => {
+    return(
+      <> 
+        <h1> Have a Meow-tastic Day!</h1>
+      </>
+    )
+  }
 
-export default App
+  export default App
 ```
 - import component and perform component call on App.js
 
@@ -48,4 +48,23 @@ export default App
 - react router: a library that provides navigation components
 - install react-router-dom
 - add BrowserRouter to index.js
-- add Routes and Route components to App.js 
+- add Routes and Route components to App.js
+- verify the urls are rendering as expected 
+
+6. Create mock data
+- create a file for the mock data using camelCasing naming convention in the src directory
+- import the file onto App.js
+- import useState for the react state
+- make the mock data the initial value of the state variable
+
+7. Style UI for components
+- copyright emblem `&copy;`
+- utilizing styling components from reactstrap
+  - Click show code
+  - Copy applicable code
+  - import components from reactstrap
+- utilizing bootstrap
+  - https://getbootstrap.com/
+  - Click `Read Docs`
+
+

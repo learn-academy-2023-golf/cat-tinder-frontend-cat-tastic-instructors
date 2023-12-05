@@ -1,18 +1,20 @@
 import React from "react"
-import { Nav, NavItem } from "reactstrap"
+import { Nav, NavItem, NavbarBrand } from "reactstrap"
 import { NavLink } from "react-router-dom"
 import catLogo from "../assets/cat-logo.png"
 
 const Header = () => {
   return(
-    <> 
-      <Nav
-        justified
-        pills
-      >
+    <header> 
+      <Nav justified>
         <NavItem>
           <NavLink to="/">
-            <img src={catLogo} alt="two black cats living fur happily after"/>
+            <img 
+              src={catLogo} 
+              alt="two black cats living fur happily after"
+              height="40"
+              width="60"
+            />
           </NavLink>
         </NavItem>
         <NavItem>
@@ -26,7 +28,7 @@ const Header = () => {
           </NavLink>
         </NavItem>
       </Nav>
-    </>
+    </header>
   )
 }
 
