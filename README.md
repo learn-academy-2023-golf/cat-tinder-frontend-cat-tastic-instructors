@@ -68,3 +68,19 @@ frontend (user interface) - React
   - Click `Read Docs`
 
 
+
+# React Testing Library
+Types of testing:
+- Static: PR's and inspecting pages for syntax mistakes
+- Unit: Looks at one portion of code and checks the output
+- Integration: Tests our code that it is working together in our application
+- End-to-end: Automates the user going through the application
+
+- render: allows us to call a component
+- screen: allows us to see the whole node tree that gets sent to the user
+
+
+Debugging Tools:
+- screen.debug()
+- screen.logTestingPlaygroundURL()
+
