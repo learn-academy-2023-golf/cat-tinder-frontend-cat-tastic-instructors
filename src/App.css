@@ -48,3 +48,38 @@ footer {
   font-size: small;
   z-index: 9;
 }
+
+
+/* Cat Index */
+
+.card-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 80px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.index-page {
+  padding-top: 100px;
+}
+
+.index-header {
+  padding: 20px;
+}
+
+.btn-secondary {
+  --bs-btn-bg: #cac1b4 !important;
+  --bs-btn-hover-bg: #e8ddcc !important;
+}
+
+/* Cat Show  */
+
+.show-page {
+  padding-top: 100px;
+}
