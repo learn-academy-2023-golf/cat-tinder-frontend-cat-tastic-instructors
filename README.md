@@ -84,3 +84,18 @@ Debugging Tools:
 - screen.debug()
 - screen.logTestingPlaygroundURL()
 
+
+# Read Functionality
+
+## RESTful Routes
+API:
+- index: (read / GET) all the cats
+- show: (read / GET) shows one cat
+- create
+- update
+- destroy
+
+UI:
+- new
+- edit
+
