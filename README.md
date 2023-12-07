@@ -96,6 +96,6 @@ API:
 - destroy
 
 UI:
-- new
-- edit
+- new: gives us a form
+- edit: gives us a form
 
