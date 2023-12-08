@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import CatEdit from "./pages/CatEdit"
@@ -13,11 +13,32 @@ import "./App.css"
 
 const App = () => {
 
-  const [cats, setCats] = useState(mockCats)
-  // console.log("cats: ", cats)
+  const [cats, setCats] = useState([])
+  console.log("cats: ", cats)
 
+  useEffect(() => {
+    readCat()
+  }, [])
+
+  const readCat = () => {
+    fetch("http://localhost:3000/cats")
+    .then((response) => response.json())
+    .then((payload) => setCats(payload))
+    .catch((error) => console.log("Cat read errors", error))
+  }
+  
   const createCat = (cat) => {
-    console.log("Created cat", cat)
+    fetch("http://localhost:3000/cats", {
+      // converts the cat object from our form to a string
+      body: JSON.stringify(cat),
+      headers: {
+        "Content-Type": "application/json"
+      },
+      method: "POST"
+    })
+    .then((response) => response.json())
+    .then(() => readCat())
+    .catch((errors) => console.log("Cat create errors", errors))
   }
 
   return(
