@@ -99,3 +99,16 @@ UI:
 - new: gives us a form
 - edit: gives us a form
 
+# Fetch
+- Makes asynchronous requests
+- JavaScript is single threaded - only does one thing at a time
+- Fetch allows us to multitask
+- Fetch sends a request and waits for a response
+- Fetch returns a promise
+
+Promises:
+- JavaScript Objects
+- Promises come in three states: pending, fullfilled, rejected
+- If promise is fullfilled - we get a payload
+- If a promise is rejected - we get an error
+
